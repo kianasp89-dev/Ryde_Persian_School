@@ -187,3 +187,33 @@ footer{
     width:160px;
     margin-bottom:15px;
 }
+
+.hero {
+    height: 500px;
+    background-image: url("images/home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 25px 35px;
+    border-radius: 12px;
+}
+
+.hero-text h1 {
+    margin: 0 0 10px 0;
+    font-size: 42px;
+}
+
+.hero-text p {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
