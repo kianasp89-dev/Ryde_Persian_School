@@ -189,9 +189,12 @@ footer{
 }
 
 .hero {
-    height: 500px;
+    height: 600px;
+    width: 90%;              /* فاصله از کناره‌ها */
+    margin: 40px auto;       /* وسط چین */
     background-image: url("images/home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 20px;     /* گوشه گرد */
 }
