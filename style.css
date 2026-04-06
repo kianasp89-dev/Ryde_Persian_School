@@ -303,6 +303,15 @@ footer {
 
 }
 
+.intro-text {
+    font-size: 19px;
+    line-height: 1.9;
+    color: #555;
+    max-width: 800px;
+    margin: 12px auto;
+    text-align: center;
+}
+
 .highlight-subtitle {
     color: #2c3e50;
     font-size: 22px;
