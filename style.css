@@ -328,7 +328,7 @@ footer {
 
 .principal-message {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 35px;
     text-align: left;
 }
@@ -340,11 +340,11 @@ footer {
 
 .principal-image img {
     width: 100%;
+    height: 420px;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     object-fit: cover;
 }
-
 .principal-text {
     flex: 2;
 }
