@@ -325,3 +325,54 @@ footer {
     padding-right: 25px;
     padding-left: 0;
 }
+
+.principal-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    text-align: left;
+}
+
+.principal-image {
+    flex: 1;
+    max-width: 280px;
+}
+
+.principal-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.principal-text {
+    flex: 2;
+}
+
+.principal-text h2 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+.principal-text p {
+    text-align: justify;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .principal-message {
+        flex-direction: column;
+    }
+
+    .principal-image {
+        max-width: 100%;
+    }
+
+    .principal-text h2 {
+        text-align: center;
+    }
+}
