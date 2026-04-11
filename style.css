@@ -409,3 +409,29 @@ footer {
     margin-bottom: 12px;
     color: #444;
 }
+
+.section h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;   /* برای موبایل */
+    margin-top: 25px;
+}
+
+.books-container img {
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.books-container img:hover {
+    transform: scale(1.05);
+}

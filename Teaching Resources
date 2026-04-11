@@ -1,0 +1,58 @@
+<h2>Teachers</h2>
+
+    <p>
+        Since the establishment of Ryde Persian School, the School has benefited from the dedication and commitment of experienced teachers who have contributed their time and expertise to the delivery of Persian language and cultural education.
+    </p>
+
+    <p>
+        Through their voluntary service and professional experience, these teachers have played an important role in supporting the School’s educational objectives and in sustaining its cultural and community mission over the years.
+    </p>
+
+    <p><span class="highlight-subtitle">The teachers of Ryde Persian School include:</span></p>
+
+    <ul class="people-list">
+        <li>Mrs. Maryam Khoshnoud Rad <strong>(Administrative Staff)</strong> </li>
+        <li>Mrs. Parvaneh Salehi <strong>(Office Assistant)</strong></li>
+        <li>Mrs. Neda Khodadoust <strong>(Activity Officer)</strong></li>
+        <li>Mrs. Zahra Hosseini</li>
+        <li>Mrs. Zahra Soltani Panah</li>
+        <li>Mrs. Layla Jabbari</li>
+        <li>Mrs. Soudabeh Poordeilami</li>
+        <li>Mrs. Marjan Habibi</li>
+        <li>Mrs. Setareh Nobahar</li>
+        <li>Mrs. Elham Lotfian</li>
+        <li>Mrs. Najmeh Barmar</li>
+        <li>Mrs. Elnaz Ahadi</li>
+        <li>Mrs. Haleh Amiri</li>
+        <li>Mrs. Atefe Astaraki</li>
+    </ul>
+
+    <section class="section">
+
+    <h1>Teaching Resources</h1>
+
+    <h2>Our Books</h2>
+
+    <p>
+        Ryde Persian School uses the comprehensive, up-to-date, and engaging 
+        <strong>‘Aasaan Aamooz’</strong> educational books, designed to suit students’ ages and learning levels, from preschool through to the early primary years.
+    </p>
+
+    <p>
+        These books focus on both language and cultural connections, helping students learn Persian while strengthening their ties to their cultural identity.
+    </p>
+
+    <p>
+        The series is the result of years of experience, research, and commitment to preserving the mother language in multilingual environments, and serves as a valuable resource for families, teachers, and anyone interested in Persian language education.
+    </p>
+
+    <div class="books-container">
+
+    <img src="images/book1.png" alt="Book 1">
+    <img src="images/book2.png" alt="Book 2">
+    <img src="images/book3.png" alt="Book 3">
+    <img src="images/book4.png" alt="Book 4">
+
+</div>
+
+</section>
