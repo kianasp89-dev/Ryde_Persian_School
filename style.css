@@ -385,3 +385,12 @@ footer {
         text-align: center;
     }
 }
+
+.intro-text {
+    text-align: center;     
+    font-size: 19px;
+    line-height: 1.9;
+    color: #555;
+    max-width: 800px;       
+    margin: 15px auto;      
+}
