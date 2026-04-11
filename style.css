@@ -394,3 +394,18 @@ footer {
     max-width: 800px;       /* عرض محدود */
     margin: 15px auto;      /* وسط قرار گرفتن کل بلاک */
 }
+
+.aims-list {
+    margin-top: 20px;
+    padding-left: 25px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aims-list li {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+    color: #444;
+}
