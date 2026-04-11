@@ -1,437 +1,107 @@
-/* =========================
-   GENERAL
-========================= */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #2c3e50;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    transition: 0.3s;
-}
-
-/* =========================
-   HEADER
-========================= */
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-    padding: 16px 20px;
-}
-
-nav a,
-.dropbtn {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: 600;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 8px 10px;
-}
-
-nav a:hover,
-.dropbtn:hover {
-    color: #d30000;
-}
-
-/* =========================
-   DROPDOWN
-========================= */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    min-width: 220px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 999;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 12px 16px;
-    text-align: left;
-    color: #2c3e50;
-    background-color: #ffffff;
-}
-
-.dropdown-content a:hover {
-    background-color: #f3f3f3;
-    color: #d30000;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Persian dropdown */
-[dir="rtl"] .dropdown-content {
-    left: auto;
-    right: 0;
-}
-
-[dir="rtl"] .dropdown-content a {
-    text-align: right;
-}
-
-/* =========================
-   MAIN SECTION
-========================= */
-.section {
-    max-width: 1000px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 55px 30px;
-    border-radius: 18px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-}
-
-.section h1,
-.section h2 {
-    margin-top: 0;
-    color: #2c3e50;
-    text-align: center;
-}
-
-.section h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 18px;
-}
-
-.section p {
-    color: #555;
-    font-size: 18px;
-    line-height: 1.9;
-    text-align: justify;
-    margin-bottom: 16px;
-}
-
-/* Persian text alignment */
-[dir="rtl"] .section {
-    text-align: right;
-}
-
-[dir="rtl"] .section h1,
-[dir="rtl"] .section h2 {
-    text-align: center;
-}
-
-[dir="rtl"] .section p {
-    text-align: justify;
-    line-height: 2;
-}
-
-/* =========================
-   LANGUAGE BUTTON
-========================= */
-.lang-btn {
-    background-color: #2c3e50;
-    color: #ffffff !important;
-    border-radius: 8px;
-    padding: 9px 16px;
-}
-
-.lang-btn:hover {
-    background-color: #1f2d3a;
-    color: #ffffff !important;
-}
-
-/* =========================
-   HERO IMAGE
-========================= */
-.hero {
-    height: 500px;
-    width: 90%;
-    max-width: 1100px;
-    margin: 30px auto 10px auto;
-    background-image: url("images/home.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 22px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-    background: #111;
-    color: #fff;
-    padding: 55px 0;
-    margin-top: 50px;
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.footer-box {
-    flex: 1;
-    min-width: 250px;
-}
-
-.footer-box h3 {
-    margin-top: 0;
-    margin-bottom: 18px;
-    border-bottom: 2px solid #d30000;
-    display: inline-block;
-    padding-bottom: 6px;
-    color: #ffffff;
-}
-
-.footer-box p {
-    line-height: 1.8;
-    color: #ccc;
-    font-size: 16px;
-    text-align: left;
-}
-
-.footer-box a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.footer-box a:hover {
-    color: #fff;
-}
-
-.footer-logo {
-    width: 160px;
-    margin-bottom: 15px;
-}
-
-/* Persian footer */
-[dir="rtl"] .footer-box p,
-[dir="rtl"] .footer-box a {
-    text-align: right;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-    nav {
-        gap: 10px;
-        padding: 12px;
-    }
-
-    nav a,
-    .dropbtn {
-        font-size: 15px;
-    }
-
-    .section {
-        margin: 20px 12px;
-        padding: 35px 18px;
-    }
-
-    .section h1 {
-        font-size: 30px;
-    }
-
-    .section h2 {
-        font-size: 24px;
-    }
-
-    .section p {
-        font-size: 16px;
-    }
-
-    .hero {
-        width: calc(100% - 24px);
-        height: 260px;
-        margin: 20px 12px 10px 12px;
-        border-radius: 16px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .footer-box {
-        width: 100%;
-    }
-
-}
-
-.intro-text {
-    font-size: 19px;
-    line-height: 1.9;
-    color: #555;
-    max-width: 800px;
-    margin: 12px auto;
-    text-align: center;
-}
-
-.highlight-subtitle {
-    color: #2c3e50;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.people-list {
-    margin-top: 10px;
-    padding-left: 25px;
-    line-height: 1.9;
-    color: #444;
-    font-size: 17px;
-}
-
-.people-list li {
-    margin-bottom: 8px;
-}
-
-[dir="rtl"] .people-list {
-    padding-right: 25px;
-    padding-left: 0;
-}
-
-.principal-message {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    text-align: left;
-}
-
-.principal-image {
-    flex: 1;
-    max-width: 280px;
-}
-
-.principal-image img {
-    width: 100%;
-    height: 420px;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    object-fit: cover;
-}
-.principal-text {
-    flex: 2;
-}
-
-.principal-text h2 {
-    text-align: center;
-    margin-top: 0;
-    font-size: 30px;
-    color: #2c3e50;
-}
-
-.principal-text p {
-    text-align: justify;
-    line-height: 1.9;
-    margin-bottom: 16px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .principal-message {
-        flex-direction: column;
-    }
-
-    .principal-image {
-        max-width: 100%;
-    }
-
-    .principal-text h2 {
-        text-align: center;
-    }
-}
-
-.intro-text {
-    text-align: center;     /* وسط چین */
-    font-size: 19px;
-    line-height: 1.9;
-    color: #555;
-    max-width: 800px;       /* عرض محدود */
-    margin: 15px auto;      /* وسط قرار گرفتن کل بلاک */
-}
-
-.aims-list {
-    margin-top: 20px;
-    padding-left: 25px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.aims-list li {
-    font-size: 18px;
-    line-height: 1.9;
-    margin-bottom: 12px;
-    color: #444;
-}
-
-.section h2 {
-    font-size: 26px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-.books-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;   /* برای موبایل */
-    margin-top: 25px;
-}
-
-.books-container img {
-    width: 180px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    transition: 0.3s;
-}
-
-.books-container img:hover {
-    transform: scale(1.05);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teaching Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us ▾</button>
+            <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="resources.html">Teaching Resources</a>
+            </div>
+        </div>
+
+        <a href="enrolment.html">Enrolment</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="calendar.html">Calendar</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Our Classes ▾</button>
+            <div class="dropdown-content">
+                <a href="primary.html">Primary Levels</a>
+                <a href="adult.html">Adult Class</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact Us</a>
+        <a href="persian.html" class="lang-btn">فارسی</a>
+    </nav>
+</header>
+
+<section class="section">
+
+    <h1>Teaching Resources</h1>
+
+    <h2>Our Books</h2>
+
+    <p>
+        Ryde Persian School uses the comprehensive, up-to-date, and engaging
+        <strong>‘Aasaan Aamooz’</strong> educational books, designed to suit students’ ages and learning levels,
+        from preschool through to the early primary years.
+    </p>
+
+    <p>
+        These books focus on both language and cultural connections, helping students learn Persian while
+        strengthening their ties to their cultural identity.
+    </p>
+
+    <p>
+        The series is the result of years of experience, research, and commitment to preserving the mother
+        language in multilingual environments, and serves as a valuable resource for families, teachers,
+        and anyone interested in Persian language education.
+    </p>
+
+    <div class="books-container">
+        <img src="images/book1.png" alt="Aasaan Aamooz Book 1">
+        <img src="images/book2.png" alt="Aasaan Aamooz Book 2">
+        <img src="images/book3.png" alt="Aasaan Aamooz Book 3">
+        <img src="images/book4.png" alt="Aasaan Aamooz Book 4">
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <img src="images/logo.png" class="footer-logo" alt="Ryde Persian School Logo">
+
+            <p>
+                Ryde Persian School is a non-for-profit organisation aiming to teach the Persian language to all ages.
+                It operates under the umbrella of Iranian Educational and Cultural Centre Inc.
+            </p>
+
+            <p>📍 2 Tucker Street Ryde NSW 2112</p>
+            <p>✉ rydepersianschool@gmail.com</p>
+            <p>📞 0410 676 006</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Our Class</h3>
+            <a href="primary.html">Primary Level</a>
+            <a href="adult.html">Adult Class</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="enrolment.html">Enrolment</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
