@@ -359,7 +359,7 @@ footer {
 }
 
 .principal-text h2 {
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     font-size: 30px;
     color: #2c3e50;
@@ -387,10 +387,10 @@ footer {
 }
 
 .intro-text {
-    text-align: center;     
+    text-align: center;     /* وسط چین */
     font-size: 19px;
     line-height: 1.9;
     color: #555;
-    max-width: 800px;       
-    margin: 15px auto;      
+    max-width: 800px;       /* عرض محدود */
+    margin: 15px auto;      /* وسط قرار گرفتن کل بلاک */
 }
